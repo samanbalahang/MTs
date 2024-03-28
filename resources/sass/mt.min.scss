@@ -1,0 +1,55 @@
+@use "layout";
+$warm-Dark-Gold  : #A87B4F;
+$warm-Dark-silver : #716558;
+@use "base";
+:root{
+  --warm-Dark-Gold  :#{$warm-Dark-Gold};
+  --warm-Dark-silver:#{$warm-Dark-silver};
+}
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'w_yekan';
+  background: url("../images/bs3.jpg") no-repeat center/cover;
+}
+.svg-container {
+    width: 90vw;
+    height: 90vh;
+    resize: both;
+    overflow: visible;
+    margin: auto;
+    // border: 1px dashed #aaa;
+    // background: #790202;
+}
+svg#mt {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+  }
+
+path:hover {
+    cursor: pointer;
+    stroke: transparent !important;
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    fill: transparent !important;
+    cursor: pointer;
+
+}
+#info-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: var(--warm-Dark-silver);
+    color: #ffffff;
+    border: 0px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+}

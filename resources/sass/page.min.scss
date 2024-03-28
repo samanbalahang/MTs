@@ -1,0 +1,87 @@
+@use "layout";
+@use "scrollbar";
+$warm-Dark-Gold   : #A87B4F;
+$warm-Dark-silver : #716558;
+$card             : #f7dcae;
+@use "base";
+@use "humburger";
+@use "nav";
+:root{
+  --warm-Dark-Gold  :#{$warm-Dark-Gold};
+  --warm-Dark-silver:#{$warm-Dark-silver};
+}
+body{
+    background: url("../images/main4.jpg");
+    background-size:cover;
+    font-family: 'w_yekan';
+    color: $warm-Dark-silver;
+}
+header{
+    nav{
+        padding:1rem 1rem 0;
+    }
+    img.logo{
+        width: 6rem;
+    }
+    nav.desk{
+
+    }
+}
+.card{
+    border: 1px solid $warm-Dark-Gold;
+}
+.card a{
+    text-decoration: none;
+    color: $warm-Dark-Gold;
+}
+.card-header{
+    background-color: $card;
+    overflow: hidden;
+    img{
+        transform: scale(1);
+        transition: 0.1s;
+    }
+}
+.card-header:hover img{
+    transform: scale(1.2) rotate(-10deg);
+    transition: 0.1s;
+}
+.allpages .card{
+    border: none !important;
+    border-radius: 0 !important;
+}
+.allpages .card img{
+    width: 100%;
+    height: 35rem;
+    box-shadow: 1px 1px black;
+    border-radius: 0 !important;
+}
+// forms
+input.form-control-mt{
+    background-color: $warm-Dark-Gold !important;
+    border:1px solid $warm-Dark-silver !important;
+    border-radius: 0 !important;
+    width: 100%;
+    padding: 1rem;
+}
+input.form-control-mt:focus{
+    border:1px solid $warm-Dark-silver !important;
+    box-shadow: none !important;
+
+}
+
+@media(min-width:768px){
+    header{
+        nav.desk{
+            ul{
+                list-style: none;
+            display: flex;
+                a{
+                    color:$warm-Dark-silver;
+                    text-decoration: none;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

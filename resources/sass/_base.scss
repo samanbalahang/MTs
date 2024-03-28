@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'w_yekan';
+    src: url('fonts/W_yekan.TTF') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+  }
+  @font-face {
+    font-family: 'w_yekan';
+    src: url('fonts/W_yekan Bold.TTF') format('truetype'); 
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue-Thin.otf') format('opentype'); 
+    font-weight: lighter;
+  }
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeueLight.ttf') format('truetype'); 
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeueMedium.ttf') format('truetype'); 
+  }
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeueBold.ttf') format('truetype'); 
+    font-weight: bold;
+  }
+  [lang*='en']{
+    direction: ltr;
+    font-family: 'HelveticaNeue';
+  }

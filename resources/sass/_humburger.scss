@@ -1,0 +1,49 @@
+.btn5{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -2rem;
+    right: -2rem;
+    transition-duration: .5s;
+    transform: scale(0.5);
+}
+.btn5 .icon{
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    top: 30px;
+    background-color: #212121;
+}
+.btn5 .icon::before{
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -21px;
+}
+
+.btn5 .icon::after{
+    transition-duration: 0.5s;
+    position: absolute;
+    width:60px;
+    height:8px;
+    background-color: #212121;
+    content: "";
+    top:  20px;
+}
+.btn5.open .icon{
+    transition: 0.5s;
+}
+.btn5.open .icon::before{
+    transform: rotateZ(-45deg) scaleX(0.75) translate(-20px, -6px);
+}
+.btn5.open .icon::after{
+    transform: rotateZ(45deg) scaleX(0.75) translate(-20px, 6px);
+
+}
+.btn5.open .icon:hover{
+    cursor: pointer;
+}

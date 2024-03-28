@@ -1,0 +1,13 @@
+.md-form label.forcheckbox{
+    top:-2rem !important;
+}
+input[type=text].form-control,
+input[type=number].form-control, 
+input[type=email].form-control, 
+input[type=password].form-control {
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: white !important;
+}

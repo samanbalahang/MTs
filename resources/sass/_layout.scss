@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box !important;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+[lang="fa-IR"]{
+    direction: rtl;
+}
+.rtl{
+    direction: rtl !important;
+}
+.ltr{
+    direction: ltr !important;
+}
+p{
+    text-align: justify;
+}
+img{
+    max-width: 100%;
+}
