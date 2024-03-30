@@ -15,15 +15,15 @@
 @section("main")
 <div class="container">
 
-<form method="POST" action="{{ route('register') }}" class="w-100 bg-white p-3">
+<form method="POST" action="{{route('register')}}" class="w-100 bg-white p-3">
     @csrf
     <div class="mb-3">
         <label for="name" class="form-label">نام :</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="">
     </div>
     <div class="mb-3">
-        <label for="Email" class="form-label">آدرس ایمیل</label>
-        <input type="Email" class="form-control" id="Email" name="Email" placeholder="">
+        <label for="email" class="form-label">آدرس ایمیل</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="">
     </div>
     <div class="mb-3">
         <label for="Password" class="form-label">رمز عبور: </label>

@@ -28,18 +28,18 @@ use App\Http\Controllers\admin\HealthController;
 require __DIR__.'/auth.php';
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name("home");
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name("home");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/profile',      [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile',    [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile',   [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 // Route::group(['prefix' => 'post', 'middleware' => ['role']], function(){
@@ -51,23 +51,23 @@ Route::middleware('auth')->group(function () {
 
 
 // Route::group(['prefix' => 'mt-panel', 'middleware' => ['auth','role:role_admin']],function(){
-    Route::group(['prefix' => 'deljin', 'middleware' => ['role']], function(){
-        Route::resource('/',dashCounterController::class);
-        Route::resource('/pages',dashPagesController::class);
-        Route::resource('/movies',MoviesController::class);
-        Route::resource('/books',BookController::class);
-        Route::resource('/podcasts',PodcastController::class);
-        Route::resource('/news',NewslettersController::class);
-        Route::resource('/helth',HealthController::class);
-    });
+Route::group(['prefix' => 'deljin', 'middleware' => ['role']], function(){
+    Route::resource('/',dashCounterController::class);
+    Route::resource('/pages',dashPagesController::class);
+    Route::resource('/movies',MoviesController::class);
+    Route::resource('/books',BookController::class);
+    Route::resource('/podcasts',PodcastController::class);
+    Route::resource('/news',NewslettersController::class);
+    Route::resource('/helth',HealthController::class);
+});
 
 
 
 
-Route::get('/', function () {
-        return view('welcome');
-    });
-Route::get('/',[MainPageController::class,"index"]);
+// Route::get('/', function () {
+//         return view('welcome');
+//     });
+Route::get('/',[MainPageController::class,"index"])->name("home");
 Route::get('/13/{uri?}',[ThirteenController::class,"index"]);
 Route::get("/movies/{uri?}",[MoviesController::class,"thepublic"]);
 Route::get("/books/{uri?}",[BookController::class,"thepublic"]);

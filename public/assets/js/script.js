@@ -1,6 +1,20 @@
+$(function(){
+  // console.log(screen.width);
 $("path, circle").hover(function(e) {
   $("#info-box").css("display", "block");
   $("#info-box").html($(this).data("info"));
+});
+
+$(".item").hover(function(e){
+    console.log("A");
+    var box = document.createElement("div");
+    $(box).addClass("box");
+    var text = $(this).data("info");
+    $(box).html(text);
+    $(this).append(box);
+});
+$(".item").mouseleave(function(e){
+  $(this).find(".box").remove();
 });
 $("path, circle").on("click",function(e) {
     var url = $(this).data("url");
@@ -46,3 +60,4 @@ if (ios) {
 // img2.style.transform="translate(20rem)";
 // console.log(img2);
 
+});

@@ -1,11 +1,13 @@
+$warm-Dark-Gold  : #A87B4F;
+$bg-color        :#dbc49b;
 ::-webkit-scrollbar {
     width: 2px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: $bg-color;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: $warm-Dark-Gold; 
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
