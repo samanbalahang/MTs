@@ -3,6 +3,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\thepublic\MainPageController;
 use App\Http\Controllers\thepublic\ThirteenController;
+use App\Http\Controllers\thepublic\sitemapController;
 
 
 // ADMIN USES
@@ -74,4 +75,5 @@ Route::get("/books/{uri?}",[BookController::class,"thepublic"]);
 Route::get("/podcasts/{uri?}",[PodcastController::class,"thepublic"]);
 Route::get("/news/{uri?}",[NewslettersController::class,"thepublic"]);
 Route::get("/health/{uri?}",[HealthController::class,"thepublic"]);
+Route::get('/sitemap',[sitemapController::class,"index"]);
 Route::get('/{pages}',[dashPagesController::class,"single"])->name("page");

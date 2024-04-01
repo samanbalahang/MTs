@@ -16,6 +16,9 @@ body{
     font-family: 'w_yekan';
     color: $warm-Dark-silver;
 }
+.en-font{
+    font-family: 'HelveticaNeue';
+  }
 header{
     nav{
         padding:1rem 1rem 0;
@@ -56,6 +59,9 @@ header{
     box-shadow: 1px 1px black;
     border-radius: 0 !important;
 }
+.pages .card-body{
+    min-height: 7rem;
+}
 // forms
 input.form-control-mt{
     background-color: $warm-Dark-Gold !important;
@@ -69,8 +75,13 @@ input.form-control-mt:focus{
     box-shadow: none !important;
 
 }
-
+.therteenmain .card h2{
+    font-size: 1rem;
+}
 @media(min-width:768px){
+    .pages .card-body{
+        min-height:auto;
+    }
     header{
         nav.desk{
             ul{
