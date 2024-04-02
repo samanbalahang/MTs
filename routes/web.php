@@ -14,6 +14,7 @@ use App\Http\Controllers\admin\BookController;
 use App\Http\Controllers\admin\PodcastController;
 use App\Http\Controllers\admin\NewslettersController;
 use App\Http\Controllers\admin\HealthController;
+use App\Http\Controllers\admin\GalleryController;
 //END ADMIN USES
 /*
 |--------------------------------------------------------------------------
@@ -60,6 +61,7 @@ Route::group(['prefix' => 'deljin', 'middleware' => ['role']], function(){
     Route::resource('/podcasts',PodcastController::class);
     Route::resource('/news',NewslettersController::class);
     Route::resource('/helth',HealthController::class);
+    Route::resource('/gallery',GalleryController::class);
 });
 
 
@@ -75,5 +77,8 @@ Route::get("/books/{uri?}",[BookController::class,"thepublic"]);
 Route::get("/podcasts/{uri?}",[PodcastController::class,"thepublic"]);
 Route::get("/news/{uri?}",[NewslettersController::class,"thepublic"]);
 Route::get("/health/{uri?}",[HealthController::class,"thepublic"]);
+Route::get('/future-creation',[MainPageController::class,"future"])->name("future");
+Route::get('/gallery',[GalleryController::class,"index"])->name("gallery.index");
 Route::get('/sitemap',[sitemapController::class,"index"]);
+
 Route::get('/{pages}',[dashPagesController::class,"single"])->name("page");

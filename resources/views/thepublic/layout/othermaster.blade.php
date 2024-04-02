@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="{{url('/')}}/assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="{{url('/')}}/assets/css/page.min.css">
+    @yield("css")
 </head>
 @include("thepublic.layout.otherheader")
 @include("thepublic.layout.header-menu")

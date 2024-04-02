@@ -5,7 +5,8 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-    use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Role;
 
 class CheckRole
 {
@@ -16,14 +17,23 @@ class CheckRole
      */
     public function handle($request, Closure $next, $role = "")
     {
-        // dd(Auth::check());
+        // dd(Auth::user()->role);
         if(Auth::check() == false){
             return redirect()->route("register");   
         }else{
-            if(Auth::user()->role->name == "Admin"){
-                return $next($request);
+            if(Auth::user()->role != null){
+                if(Auth::user()->role->name == "Admin"){
+                    return $next($request);
+                }else{
+                    return redirect()->route("home");   
+                }
+             
             }else{
-                return redirect()->route("home");   
+                if(Role::find(Auth::user()->role_id)->name == "Admin"){
+                    return $next($request);
+                }else{
+                    return redirect()->route("home");   
+                }
             }
         }
         if (! $request->user()->hasRole($role)) {

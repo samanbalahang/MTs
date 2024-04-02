@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="#">
+                        <a href="{{route('future')}}">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/future-creation-03.png" alt="png">
                             </div>

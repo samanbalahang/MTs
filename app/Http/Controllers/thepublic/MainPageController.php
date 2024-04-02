@@ -64,4 +64,7 @@ class MainPageController extends Controller
     {
         //
     }
+    public function future(){
+        return view("thepublic.future");
+    }
 }

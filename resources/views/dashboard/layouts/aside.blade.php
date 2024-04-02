@@ -13,6 +13,14 @@
                     </ul>
             </li>
             <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="page-tab0" role="tab" type="button" href="#">
+                        <i class="fas fa-photo-video fa-fw me-3"></i><span>گالری </span>
+                    </a>
+                    <ul class="absolute-menu submenu">
+                        <li><a href="{{route('gallery.create')}}">افزودن جدید</a></li>
+                    </ul>
+            </li>
+            <li class="nav-item" role="presentation">
                 <a class="nav-link" id="page-tab0" role="tab" type="button" href="#">
                     <i class="far fa-play-circle fa-fw me-3"></i><span>فیلمها </span>
                 </a>

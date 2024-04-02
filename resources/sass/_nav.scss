@@ -24,7 +24,7 @@ nav.desk{
     background-color: wheat;
     z-index: 2;
     transition: 1s;
-    transform: translate(37rem, 0);
+    transform: translate(100rem, 0);
     box-shadow: 1px 1px 11px $warm-Dark-silver;
     height: 100vh;
     overflow: scroll;
@@ -42,7 +42,7 @@ nav.desk.show{
     transition: 1s;
     transform: translate(0,0);
 }
-@media (min-width:768px) {
+@media (min-width:1025px) {
     nav.mobile{
         display: none;
     }

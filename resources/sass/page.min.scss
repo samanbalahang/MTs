@@ -20,11 +20,15 @@ body{
     font-family: 'HelveticaNeue';
   }
 header{
+    h1{
+        font-size: 1rem;
+        text-align: center;
+    }
     nav{
         padding:1rem 1rem 0;
     }
     img.logo{
-        width: 6rem;
+        width:2rem;
     }
     nav.desk{
 
@@ -79,14 +83,25 @@ input.form-control-mt:focus{
     font-size: 1rem;
 }
 @media(min-width:768px){
+
     .pages .card-body{
         min-height:auto;
     }
+   
     header{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+        img.logo{
+            width: 6rem;
+        }
         nav.desk{
+            padding:1rem ;
+           
             ul{
                 list-style: none;
-            display: flex;
+                 display: flex;
                 a{
                     color:$warm-Dark-silver;
                     text-decoration: none;
