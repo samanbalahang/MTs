@@ -67,4 +67,7 @@ class MainPageController extends Controller
     public function future(){
         return view("thepublic.future");
     }
+    public function favorite(){
+        return view("thepublic.favorite");
+    }
 }

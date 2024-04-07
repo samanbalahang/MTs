@@ -107,7 +107,8 @@ class BookController extends Controller
             return view("thepublic.page",compact("thispage"));
         }else{
             $allpages = Book::all();
-            return view("thepublic.allpages",compact("allpages"));
+            $heading   = "کتابها";
+            return view("thepublic.allpages",compact("allpages","heading"));
         }
     }
 }

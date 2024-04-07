@@ -12,9 +12,10 @@ $card             : #f7dcae;
 }
 body{
     background: url("../images/main4.jpg");
-    background-size:cover;
+    // background-size:cover;
     font-family: 'w_yekan';
     color: $warm-Dark-silver;
+    background-repeat: repeat-y;
 }
 .en-font{
     font-family: 'HelveticaNeue';

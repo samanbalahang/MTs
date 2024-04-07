@@ -107,6 +107,7 @@ class PodcastController extends Controller
             return view("thepublic.page",compact("thispage"));
         }else{
             $allpages = Podcast::all();
+            $heading   = "پادکست ها";
             return view("thepublic.allpages",compact("allpages"));
         }
     }

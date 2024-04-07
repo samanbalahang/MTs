@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\admin;
-
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;         
 use App\Models\admin\Pages;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\admin\HelperController;
+use App\Http\Controllers\admin\testerController; 
 class dashPagesController extends Controller
 {
     /**
@@ -44,7 +44,10 @@ class dashPagesController extends Controller
     public function store(Request $request)
     {
         //
-        $helper = new HelperController;
+      
+        // dd(HelperController::stringDate()); 
+        // dd(testerController::stringDate()); 
+        $helper = new testerController;
         $file   = $request->file('mainImg');
         if(isset($file)){
             $saveTo = "uploads/".$helper->stringDate()."/";

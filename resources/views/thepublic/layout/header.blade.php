@@ -38,6 +38,9 @@
                  @case(12)
                         <img src="{{url('/')}}/assets/images/globalrelations.png" alt="tree" class="logo">
                  @break
+                 @default
+                        <img src="{{url('/')}}/assets/images/13.png" alt="tree" class="logo">
+                 @break
             @endswitch
         </a>
         <div class="d-flex flex-column justify-content-center align-items-center col-4">

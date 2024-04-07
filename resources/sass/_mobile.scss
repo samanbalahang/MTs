@@ -1,0 +1,182 @@
+$warm-Dark-Gold   : #A87B4F;
+$warm-Dark-silver : #716558;
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'w_yekan';
+    background: url("../images/bs3.jpg") no-repeat center/cover;
+    font-size: 0.8rem;
+}
+.container-bg {
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    overflow-y: hidden;
+    a {
+      color: $warm-Dark-silver;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+
+      span {
+        display: block;
+        transform: translate(0, 0rem);
+      }
+    }
+}
+.main-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.therteen-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto;
+}
+.item {
+    height: 100%;
+    position: relative;
+    img{
+        width: 40%;
+
+    }
+}
+.fly {
+    grid-column: 1/6;
+    grid-row: 1/1;
+    .box {
+        position: absolute;
+        width: max-content;
+        height: 1.6rem;
+        padding: .1rem;
+        top: 5rem;
+        left: 50%;
+        padding: 1rem;
+        transform: translate(-50%, 50%);
+        background: #716558;
+        border-radius: 2px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        z-index: 5;
+        font-size: 1rem;
+        vertical-align: middle;
+        align-items: center;
+      }
+      img{
+        width: 100%;
+
+    }
+}
+.writer{
+    grid-column: 1/2;
+    grid-row   : 2/2;
+}
+.nature {
+    grid-column: 2/5;
+    grid-row   : 2/2;
+}
+
+.globalresearch {
+    grid-column: 5/6;
+    grid-row   : 2/2;
+}
+.event {
+    grid-column: 1/2;
+    grid-row   : 3/3;
+    img{
+        width: 100%;
+    }
+}
+.char {
+    grid-column: 2/5;
+    grid-row   : 3/3;
+}
+.metavers {
+    grid-column: 5/6;
+    grid-row   : 3/3;
+}
+.arezoha {
+    grid-column: 1/2;
+    grid-row   : 4/4;
+    img{
+        width: 100%;
+    }
+}
+.tree {
+    grid-column: 2/4;
+    grid-row   : 4/4;
+}
+.discover {
+    grid-column: 4/5;
+    grid-row   : 4/4;
+    img{
+        width: 100%;
+    }
+}
+.branding {
+    grid-column: 5/6;
+    grid-row   : 4/4;
+    img{
+        width: 100%;
+    }
+}
+.globalrelations {
+    grid-column: 1/2;
+    grid-row   : 5/5;
+    img{
+        width: 100%;
+    }
+}
+.marther {
+    height: 100%;
+    display: grid;
+    align-items: flex-end;
+    position: relative;
+    grid-column: 2/5;
+    grid-row: 5/5;
+    .marjan {
+        display: grid;
+        align-items: flex-end;
+        img {
+            width: 57%;
+        }
+    }
+    .thirteen-father {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-items: flex-end;
+        justify-content: center;
+        padding: .51rem;
+        .thirteen {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: grid;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 0;
+            img {
+                width: 18%;
+            }
+        }
+    }
+}
+
+.trading {
+    grid-column: 5/6;
+    grid-row: 5/5;
+    img{
+        width: 100%;
+
+    }
+
+}

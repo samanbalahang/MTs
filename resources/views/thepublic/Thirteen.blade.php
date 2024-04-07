@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="{{url('/')}}/صورتی محکم/">
+                        <a href="{{ url('/') }}/صورتی محکم/">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/writer-card.png" alt="png">
                             </div>
@@ -30,8 +30,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-3 my-3">
-                   <div class="card">
-                        <a href="{{url('/')}}/">
+                    <div class="card">
+                        <a href="{{ url('/') }}/">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/marjan-card.png" alt="png">
                             </div>
@@ -45,13 +45,13 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="{{url('/')}}/چرخه حیات/">
+                        <a href="{{ url('/') }}/چرخه حیات/">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/char-card.png" alt="png">
                             </div>
                             <div class="card-body">
                                 <h2 class='text-center'>
-                                        موسسه چرخه حیات
+                                    موسسه چرخه حیات
                                 </h2>
                             </div>
                         </a>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="{{url('/')}}/news/">
+                        <a href="{{ url('/') }}/سجاد-سالاروند/">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/sajad-sallarvand.jpg" alt="png">
                             </div>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="{{url('/')}}/health/">
+                        <a href="{{ url('/') }}/health/">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/health.png" alt="png">
                             </div>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="card-body">
                                 <h2 class='text-center'>
-                                    فروشگاه آنلاین 
+                                    فروشگاه آنلاین
                                     <span class="en-font">
                                         MT
                                     </span>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="{{route('future')}}">
+                        <a href="{{ route('future') }}">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/future-creation-03.png" alt="png">
                             </div>
@@ -121,13 +121,69 @@
                 </div>
                 <div class="col-6 col-md-3 my-3">
                     <div class="card">
-                        <a href="#">
+                        <a href="{{ route('gallery.index') }}">
                             <div class="card-header p-0">
                                 <img src="{{ url('/') }}/assets/images/gallery.png" alt="png">
                             </div>
                             <div class="card-body">
                                 <h2 class='text-center'>
                                     گالری عکس
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 my-3">
+                    <div class="card">
+                        <a href="{{url('/') }}/مدوس-دیزاین">
+                            <div class="card-header p-0">
+                                <img src="{{ url('/') }}/assets/images/design.png" alt="png">
+                            </div>
+                            <div class="card-body">
+                                <h2 class='text-center'>
+                                    مدوس دیزاین
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 my-3">
+                    <div class="card">
+                        <a href="{{url('/') }}/پرسنال-برندینگ">
+                            <div class="card-header p-0">
+                                <img src="{{ url('/') }}/assets/images/personal.jpg" alt="png">
+                            </div>
+                            <div class="card-body">
+                                <h2 class='text-center'>
+                                    مدوس پرسنال برندینگ
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 my-3">
+                    <div class="card">
+                        <a href="{{route('favorite')}}">
+                            <div class="card-header p-0">
+                                <img src="{{ url('/') }}/assets/images/favorite.png" alt="png">
+                            </div>
+                            <div class="card-body">
+                                <h2 class='text-center'>
+                                    علاقه‌مندی های مدوس
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 my-3">
+                    <div class="card">
+                        <a href="{{url('/') }}/مدوس-طراحی-فضاهای-عملکردی">
+                            <div class="card-header p-0">
+                                <img src="{{ url('/') }}/assets/images/future-space.png" alt="png">
+                            </div>
+                            <div class="card-body">
+                                <h2 class='text-center'>
+                                    مدوس طراحی فضاهای عملکردی
                                 </h2>
                             </div>
                         </a>

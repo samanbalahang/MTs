@@ -16,3 +16,6 @@ var swiper = new Swiper(".mySwiper", {
       swiper: swiper,
     },
   });
+
+//   var yswiper = new Swiper(".youSwiper", {});
+  // var swiper = new Swiper(".mySwiper", {});

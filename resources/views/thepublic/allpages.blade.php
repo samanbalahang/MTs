@@ -3,13 +3,21 @@
     <title>
         مرجان ترابی-
         -
+        @if(isset($heading))
+            {{$heading}}
+        @else
         13
+        @endif
     </title>
 @endsection
 @section('css')
 @endsection
 @section('heading1')
-    13
+    @if(isset($heading))
+    {{$heading}}
+    @else
+        13
+    @endif
 @endsection
 @section('main')
     <main>

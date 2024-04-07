@@ -79,6 +79,9 @@ Route::get("/news/{uri?}",[NewslettersController::class,"thepublic"]);
 Route::get("/health/{uri?}",[HealthController::class,"thepublic"]);
 Route::get('/future-creation',[MainPageController::class,"future"])->name("future");
 Route::get('/gallery',[GalleryController::class,"index"])->name("gallery.index");
+Route::get('/favorite',[MainPageController::class,"favorite"])->name("favorite");
+Route::get("/tesrt",function(){
+    return view("swiper");
+});
 Route::get('/sitemap',[sitemapController::class,"index"]);
-
 Route::get('/{pages}',[dashPagesController::class,"single"])->name("page");

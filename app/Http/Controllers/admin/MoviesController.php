@@ -106,7 +106,8 @@ class MoviesController extends Controller
             return view("thepublic.page",compact("thispage"));
         }else{
             $allpages = Movies::all();
-            return view("thepublic.allpages",compact("allpages"));
+            $heading  = "فیلمها";
+            return view("thepublic.allpages",compact("allpages",'heading'));
         }
     }
 }

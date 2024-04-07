@@ -6,6 +6,7 @@ use App\Models\admin\gallery;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\admin\HelperController;
+use App\Http\Controllers\admin\testerController;
 class GalleryController extends Controller
 {
     /**
@@ -14,8 +15,9 @@ class GalleryController extends Controller
     public function index()
     {
         //
+
         if(Gallery::exists()){
-            $gallery = new Gallery();
+            $gallery = Gallery::all();
             return view("thepublic.gallery", compact("gallery"));
         }else{
             return abort(404);
@@ -37,11 +39,16 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         //
-        $helper = new HelperController;
+        $helper = new testerController;
+        $file   = $request->file('mainImg');
         if(isset($file)){
             $saveTo = "uploads/".$helper->stringDate()."/";
             // dd($saveTo);
             $address = $helper->saveMediaFile($request,"mainImg", $saveTo);
+        }else{
+            $file   = $request->file('file');
+            $saveTo = "uploads/".$helper->stringDate()."/";
+            $address = $helper->saveMediaFile($request,"file", $saveTo);
         }
         $request["mainImg"]=$address;
         if(gallery::create($request->all())){
