@@ -87,15 +87,33 @@ $warm-Dark-silver : #716558;
         grid-row: 2/2;
         a{
             display: block;
-            text-align: right;
             width: 100%;
             display: block;
-            text-align: right;
-            padding-right: 2.5rem;
+            text-align: center;
+            padding-right: 1.4rem;
         }
         img{
             width: 50%;
         }
+        .box {
+            position: absolute;
+            width: max-content;
+            height: 1.6rem;
+            padding: .1rem;
+            top: -2.5rem;
+            right:0;
+            padding: 1rem;
+            transform: translate(0, 50%);
+            background: #716558;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            z-index: 5;
+            font-size: 1rem;
+            vertical-align: middle;
+            align-items: center;
+          }
     }
     .event{
         grid-column: 6/7;
@@ -107,14 +125,14 @@ $warm-Dark-silver : #716558;
         display: grid;
         justify-content: flex-end;
         img{
-            width: 20%;
+            width: 52%;
         }
         .box {
             position: absolute;
             width: max-content;
             height: 1.6rem;
             padding: .1rem;
-            top: 2rem;
+            top: -3rem;
             left: 50%;
             padding: 1rem;
             transform: translate(-50%, 50%);
@@ -134,14 +152,16 @@ $warm-Dark-silver : #716558;
         grid-column: 1/2;
         grid-row: 3/3;
     }
-    .tree{
+    .discover{
         grid-column: 2/3;
         grid-row: 3/3;
+
     }
-    .discover{
+    .tree{
         grid-column: 3/4;
         grid-row: 3/3;
     }
+
     .marther {
         grid-column: 4/5;
         grid-row: 3/3;
@@ -154,7 +174,8 @@ $warm-Dark-silver : #716558;
             align-items: flex-end;
             width: 100%;
             img {
-                width: 100%;
+                width: 177%;
+                max-width: 177%;
             }
         }
 
@@ -174,8 +195,11 @@ $warm-Dark-silver : #716558;
                 width: 100%;
                 display: grid;
                 align-items: flex-end;
-                justify-content: center;
+                justify-content: flex-end;
                 padding: 0;
+                a{
+                    text-align: left;
+                }
                 img {
                     width: 30%;
                 }
@@ -205,6 +229,11 @@ $warm-Dark-silver : #716558;
     .nature {
         grid-column: 5/6;
         grid-row: 3/3;
+        display: grid;
+        justify-content: flex-end;
+        a{
+            text-align: left;
+        }
     }
     .branding{
         grid-column: 6/7;

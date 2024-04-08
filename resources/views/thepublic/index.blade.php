@@ -78,6 +78,13 @@
                             <span class="d-block d-md-none">خلق آرزوها</span>
                         </a>
                     </div>
+                   <div class="discover item" data-info="کشف مهارت">
+                        <a href="{{ url('/') }}/کشف مهارت">
+                            <img src="{{ url('/') }}/assets/images/discover.png" alt="metavers"
+                                class="animate__animated animate__tada animate__slower animate__repeat-2">
+                            <span class="d-block d-md-none">کشف مهارت</span>
+                        </a>
+                    </div>
                     <div class="tree item" data-info="سوگندنامه">
                         <a href="{{ url('/') }}/سوگندنامه">
                             <img src="{{ url('/') }}/assets/images/tree.png" alt="tree"
@@ -85,14 +92,6 @@
                             <span class="d-block d-md-none">سوگندنامه</span>
                         </a>
                     </div>
-                    <div class="discover item" data-info="کشف مهارت">
-                        <a href="{{ url('/') }}/کشف مهارت">
-                            <img src="{{ url('/') }}/assets/images/discover.png" alt="metavers"
-                                class="animate__animated animate__tada animate__slower animate__repeat-2">
-                            <span class="d-block d-md-none">کشف مهارت</span>
-                        </a>
-                    </div>
-                   
                     <div class="marther">
                         <div class="marjan item" data-info="خانم ترابی">
                             <a href="{{ url('/') }}/خانم ترابی">
